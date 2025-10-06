@@ -103,8 +103,9 @@
       "esri/symbols/SimpleFillSymbol",
       "esri/PopupTemplate",
       "esri/widgets/BasemapToggle",
-      "esri/Basemap"
-    ], function(Map, MapView, FeatureLayer, Graphic, SimpleMarkerSymbol, UniqueValueRenderer, SimpleFillSymbol, PopupTemplate, BasemapToggle, Basemap) {
+      "esri/Basemap",
+      "esri/widgets/Legend"
+    ], function(Map, MapView, FeatureLayer, Graphic, SimpleMarkerSymbol, UniqueValueRenderer, SimpleFillSymbol, PopupTemplate, BasemapToggle, Basemap, Legend) {
       var map = new Map({
         basemap: "topo-vector"
       });
@@ -266,6 +267,7 @@
       });
 
       view.ui.add(toggle, "bottom-left");
+
 });
     
   </script>
